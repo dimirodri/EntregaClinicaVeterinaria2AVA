@@ -1,7 +1,12 @@
 package gestion;
 
 import java.io.Serializable;
-
+/**
+ * 
+ * @author drodrigueza
+ *
+ *@version 1.0
+ */
 public class Mascota implements Serializable{
 
 	private long ID;
@@ -10,6 +15,14 @@ public class Mascota implements Serializable{
     private String raza;
     private Persona duenyo;
 
+    /**
+     * 
+     * @param ID la id de la mascota
+     * @param nombre el nombre de la mascota
+     * @param edad la edad de la mascota
+     * @param raza la raza de la mascota
+     * @param duenyo el dueÃ±o de la mascota
+     */
     public Mascota(long ID, String nombre, int edad, String raza, Persona duenyo) {
     	this.setID(ID);
         this.nombre = nombre;
@@ -17,42 +30,69 @@ public class Mascota implements Serializable{
         this.raza = raza;
         this.duenyo = duenyo;
     }
+    /**
+     * Metodo que te devuelve el nombre de la mascota
+     * @return
+     */
 
     public String getNombre() {
         return nombre;
     }
-
+    /**
+     * 
+     * @param nombre metodo para cambiar el nombre del animal
+     */
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-
+    /**
+     * 
+     * @return metodo para obtener la edad del animal
+     */
     public int getEdad() {
         return edad;
     }
-
+    /**
+     * 
+     * @param edad metodo para cambiar la edad del animal
+     */
     public void setEdad(int edad) {
         this.edad = edad;
     }
-
+    /**
+     *  
+     * @return metodo para obtener la raza del animal
+     */
     public String getRaza() {
         return raza;
     }
-
+    /**
+     * 
+     * @param raza metodo para establecer la raza del animal
+     */
     public void setRaza(String raza) {
         this.raza = raza;
     }
-
+    /**
+     * 
+     * @return metodo para obtener el dueÃ±o del animal
+     */
     public Persona getDuenyo() {
         return duenyo;
     }
-
+    /**
+     * 
+     * @param duenyo metodo para establecer el dueÃ±o del animal
+     */
     public void setDuenyo(Persona duenyo) {
         this.duenyo = duenyo;
     }
-
+    /**
+     * Metodo para mostrar Animal
+     */
     @Override
     public String toString() {
-        return ("Nombre: " + nombre + " Edad: " + edad + " Raza: " + raza + " Dueño: " + duenyo.toString());
+        return ("Nombre: " + nombre + " Edad: " + edad + " Raza: " + raza + " Dueï¿½o: " + duenyo.toString());
     }
 
 	private long getID() {
@@ -64,12 +104,12 @@ public class Mascota implements Serializable{
 	}
 	
 	public boolean repira() {
-		//aquí vendría el código para la respiración
+		//aquï¿½ vendrï¿½a el cï¿½digo para la respiraciï¿½n
 		return true;
 	}
 
 	public boolean come(float cantidad) {
-		//aquí vendría el código para ver lo que comen
+		//aquï¿½ vendrï¿½a el cï¿½digo para ver lo que comen
 		return true;
 		
 	}
