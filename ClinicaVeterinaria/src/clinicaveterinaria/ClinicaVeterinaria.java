@@ -117,6 +117,7 @@ public class ClinicaVeterinaria {
 		    System.err.println("Has causado una excepci�n porque no has entrado un n�mero entero, gracias");
 		    return;
 		}
+		//String
 		System.out.println("Introduce el nombre");
 		String nombre = teclado.readLine();
 		System.out.println("Introduce la raza");
